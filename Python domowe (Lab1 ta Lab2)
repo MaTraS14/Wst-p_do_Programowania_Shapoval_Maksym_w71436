@@ -1,0 +1,380 @@
+(Lab1)
+
+# Zadanie 8
+# wiek = int(input("Wiek: "))
+#
+# if 70 <= wiek <= 130:
+#      print("Osoba stara")
+# elif 0 <= wiek <13:
+#     print("Dziecko")
+# elif 13 <= wiek <= 18:
+#     print("Nastolatek")
+# elif wiek >= 18:
+#     print("Osoba dorosła")
+
+# Zadanie 9
+# wiek = input("Wprowadź swój wiek: ")
+#
+# wiek = int(wiek)
+#
+# if wiek < 0:
+#     print("Wiek nie może być ujemny.")
+# elif wiek < 4:
+#     print("Wstęp bezpłatny.")
+# elif wiek < 18:
+#     print("Cena biletu: 10 zł")
+# else:
+#     student = input("Jesteś studentem? (tak/nie): ")
+#     if student == "так":
+#         print("Cena biletu: 15 zł")
+#     elif student == "ні":
+#         print("Cena biletu: 20 zł")
+#     else:
+#         print("Nieprawidłowa odpowiedź.")
+
+# Zadanie 10
+# x = int(input("Podaj liczbę (1): "))
+# y = int(input("Podaj liczbę (2): "))
+# z = int(input("Podaj liczbę (3): "))
+#
+# if x>y and x>z:
+#     print(x,y,z)
+# elif y>x and y>z:
+#     print(y,x,z)
+# elif z>x and z>y:
+#     print(z,x,y)
+# elif x<y and x>z:
+#     print(x,y,z)
+# elif y<z and y>x:
+#     print(y,z,x)
+# elif z<x and z>y:
+#      print(z,x,y)
+#
+# Zadanie 11
+# ## a^2 + bx + c =0
+#
+# import math
+# a=int(input("Podaj współczynnik a: "))
+# b=int(input("Podaj współczynnik b: "))
+# c=int(input("Podaj współczynnik c: "))
+#
+# delta = b*b - 4*a*c
+# print(delta)
+#
+# if delta == 0:
+#     rozw= -b/ (2*a)
+#     print(f"Równanie ma jedno rozwiązanie: {rozw}")
+# elif delta > 0:
+#     rozw = (-b - math.sqrt(delta)) / (2 * a)
+#     rozw2 = (-b + math.sqrt(delta)) / (2 * a)
+#     print(f"Równanie ma dwa rozwiązania: {rozw}, {rozw2}")
+# else:
+#     print("Równanie jest sprzeczne")
+
+# Zadanie 12
+# #(a)
+# x = float(input("Wpisz liczbę: "))
+#
+# if x > 0:
+#     a = 2 * x
+#     print(a)
+# elif x == 0:
+#     a = 0
+#     print(a)
+# elif x < 0:
+#     a = -3 * x
+#     print(a)
+# #(b)
+# elif x >= 1:
+#     b = x ** 2
+#     print(b)
+# elif x < 1:
+#     b =  x
+#     print(b)
+# #(c)
+# elif x > 2:
+#     c =  2 + x
+#     print(c)
+# elif x == 2:
+#     c = 8
+#     print(c)
+# elif x < 2:
+#     c = x - 4
+
+# Zadanie 13
+# a = int(input("Podaj liczbę piewrzą: "))
+# b = int(input("Podaj  liczbę drugż: "))
+#
+# c = input("Wybierz akcję ( - , * , / , + ): ")
+#
+# if c == "+":
+#     Wynik =  a + b
+# elif c == "-":
+#    Wynik = a - b
+# elif c == "*":
+#    Wynik = a * b
+# elif c == "/":
+#    Wynik = a / b
+#    if b != 0:
+#       Wynik = a / b
+#    else:
+#       Wynik = "Na zero nie możda dzielić"
+# else:
+#    Wynik = "Nieprawidłowy wybór działania"
+# print(f"Wynik: {Wynik}")
+
+# Zadanie 14
+# Format = input("Podaj nazwę pliku: ")
+#
+# if Format.endswith(('.xls', '.xlsx')):
+#     print("To jest plik arkusza Excel.")
+# else:
+#     print("To nie jest plik arkusza Excel.")
+
+
+
+(Lab2)
+
+# Zadanie 0
+# wiek = int(input("Ile masz lat? "))
+#
+# if wiek >= 40:
+#     print("Osoba stara")
+#
+# elif 13 <= wiek <= 18:
+#  print("Nastolatek")
+#
+# elif 0 <= wiek <= 13:
+#  print("Dziecko")
+#
+# elif 18 <= wiek <= 130:
+#     print("Osoba dorosła")
+# else:
+#     print("Bład")
+
+# Zadanie 0 (2)
+# wiek = int(input("Ile masz lat? "))
+# jest_studentem = input("Jestesz studentem? (Tak/Nie): ")
+#
+# if wiek < 4:
+#     cena = 0
+# elif 4 <= wiek < 18:
+#     cena = 10
+# else:
+#     cena = 15 if jest_studentem else 20
+#
+# print(f"Cena biletu: {cena} PLN")
+
+
+
+# Zadanie 1
+# for i in range(1, 60 , 3):
+#     print(i)
+#
+# for i in range(100, -1, -1):
+#     print(i)
+#
+# for i in range(20, -1, -2):
+#     print(i)
+
+# Zadanie 2
+# (a)
+# x = int(input("Podaj rozmiar kwadraru: "))
+#
+# for j in range(x):
+#    for i in range(x):
+#       print("*", end=" ")
+#    print(" ")
+# (b)
+# x = int(input("Podaj rozmiar kwadraru: "))
+# for j in range(x):
+#    for i in range(j+1):
+#       print("*", end=" ")
+#    print(" ")
+#
+# (c)
+# x = int(input("Podaj rozmiar piramidy: "))
+# for j in range(x):
+#     for k in range(x - j - 1):
+#         print(" ", end="")
+#     for i in range(2 * j + 1):
+#         print("*", end=" ")
+#     print("")
+
+# Zadanie 3
+# tekst = "Rzeszów jest piękny"
+#
+# print(tekst[8])
+# print(tekst[6])
+# print(tekst[8 : 7])
+# print(tekst[8 : : 2])
+# print(tekst[-2])
+#
+# print(tekst[10 : ])
+#
+# print(tekst[-1 : : -1])
+
+# Zadanie 4
+# n=int(input("Wprowadź liczbę naturalną: "))
+# a=float(input("Wprowadź pierwszy element: "))
+# r=float(input("Wprowadź różnicę: "))
+#
+# print("Elementy ciągu arytmetycznego:", end=(" "))
+# for i in range(n):
+#     print(a - i * r, end=(" "))
+#
+# Zadanie 5
+# n = int(input("Napisz cisło: "))
+# print(factorial(n))
+
+# Zadanie 6
+# tekst = "Python jest super"
+#
+# print(tekst[0])
+#
+# print(tekst[-1])
+#
+# print(tekst[::2])
+#
+# print(tekst[1::3])
+#
+# print(tekst[10:])
+#
+# print(tekst[::-1])
+
+# Zadanie 7
+# (A)
+# imie = input("Podaj swoje imię: ")
+# print("Witaj", imie)
+# (B)
+# wiek = int(input("Podaj swój wiek: "))
+# print("Twój wiek to:", wiek)
+#
+# (C)
+# imie = input("Imię: ")
+# nazwisko = input("Nazwisko: ")
+# print(imie[0] + nazwisko[0])
+#
+# (D)
+# lancuch = input("Podaj łańcuch: ")
+# print(lancuch * 5)
+#
+# (E)
+# l1 = input("L1: ")
+# l2 = input("L2: ")
+# print(l1 + l2)
+#
+# (F)
+# l1 = input("L1: ")
+# l2 = input("L2: ")
+# print(l1[:len(l1)//2] + l2[len(l2)//2:])
+
+#Zadanie 8
+# x1 = -4
+# x2 = 4
+# x3 = 0.5
+#
+# x = x1
+# for i in range(int((x2 - x1) / x3) + 1):
+#     y = 2 * x**2 - 5 * x -8
+#     print(f'x = {x}, y = {y}')
+#     x += x3
+
+# Zadanie 9
+# a = int(input("Podaj liczbę: "))
+#
+# while a >= 0:
+#      a = int(input("Podaj liczbę: "))
+#      if a < 0:
+#           break
+
+# Zadanie 10
+# a = int(input("Podaj liczbę: "))
+# b = int(input("Podaj liczbę: "))
+#
+# while a != b+1:
+#      print(a)
+#      a += 1
+
+# Zadanie 11
+# start = 1
+# end = 20
+#
+# for i in range(start, end + 1):
+#     if i % 2 != 0:
+#         continue
+#     print(i
+
+# Zaddanie 12
+# n = int(input("Podaj liczbę studentów: "))
+#
+# suma_punktów = 0
+# i = 1
+#
+# while i <= n:
+#     punkty = float(input(f"Podaj punkty dla studenta {i}: "))
+#     suma_punktów += punkty
+#     i += 1
+#
+# srednia = suma_punktów / n
+#
+# print(f"Średnia liczba punktów w grupie wynosi: ", srednia)
+
+# Zadanie 13
+# n = int(input("Podaj liczbę studentów: "))
+#
+# suma_punktów = 0
+# i = 1
+#
+# while True:
+#     punkty = float(input(f"Podaj punkty dla studenta {i}: "))
+#
+#     if punkty < 0 or punkty > 100:
+#         print("Bład.")
+#         continue
+#
+#     suma_punktów += punkty
+#     i += 1
+#
+#     if i > n:
+#         break
+#
+# srednia = suma_punktów / n
+#
+# print(f"Średnia liczba punktów w grupie wynosi: ", srednia)
+
+# Zadanie 14
+# while True:
+#     n = input("Podaj ilość: ")
+#     if n.isdigit():
+#         n = int(n)
+#
+#         if int(n) < 0:
+#             print("Dziękujemy za skorzystanie z naszej aplikacji")
+#             break
+#         print("To jest liczba dodatnia")
+#         continue
+#     else:
+#         print("Dziękujemy za skorzystanie z naszej aplikacji")
+#         break
+#
+#     print("Dziękujemy za skorzystanie z naszej aplikacji")
+#
+# while True:
+#     n = input("Podaj ilość: ")
+#     if n.isdigit():
+#         n = int(n)
+#
+#         if int(n) < 0:
+#             print("Dziękujemy za skorzystanie z naszej aplikacji")
+#             break
+#         print("To jest liczba dodatnia")
+#     else:
+#         print("Dziękujemy za skorzystanie z naszej aplikacji")
+#         break
+#     x = round(math.sqrt(n), 2)
+#     print(x)
+#     print("Dziękujemy za skorzystanie z naszej aplikacji")
+
+
+
